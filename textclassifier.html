@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Felix Leong - Text Classifier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="index.html#portfolio">Return to Mainpage</a></li>
+				</ul>
+			</nav>
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style1">
+				<div class="container">
+					<h2>Text Classification</h2>
+					<table>
+						<thead>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="columnheading"><strong>Project Description</strong></td>
+								<td class="left">
+									Engineering and supply chain processes are centralized around the use of the parts
+									database to select, track, and warehouse parts. There are currently 28,000+ parts in
+									the database, which is rapidly increasing as the company grows. Parts were not
+									categorized in commodities. This project aimed to streamline engineering and supply chain processes by automatically categorizing all existing and future parts in the parts
+									catalog.
+								</td>
+							</tr>
+							<tr>
+								<td class="columnheading"><strong>Business Benefits</strong></td>
+								<td class="left">Ability to consolidate spent and direct it to one or two suppliers for that category of part, to benefit from mass order discounts
+									<br>Ability to analyze spent based on commodity
+									<br>Giving more visibility on item categorization so that suppliers can be identified by commodity
+								</td>
+								<tr>
+									<td class="columnheading"><strong>Toolset</strong></td>
+									<td class="left">
+										Python: Tensorflow, Sklearn, Pandas, Seaborn, Nltk
+									</td>
+								</tr>
+							<tr>
+								<td class="columnheading"><strong>Methodology</strong></td>
+								<td class="left">
+									1) Run a K-Cluster analysis on the existing catalog to qualify data distinctness
+									<br>2) Identify list of commodities
+									<br>3) Manually create a training and testing set out of the 28,000 existing entries in the parts database
+									<br>4) Create a supervised machine learning model using the Naive Bayes theorem, and train the model using the training set
+									<br>5) Run model against the testing set for validation
+									<br>6) Integrate the model into the parts catalog interface using REST.API
+								</td>
+							</tr>
+							<tr>
+								<td class="columnheading"><strong>Achievements</strong></td>
+								<td class="left">
+									Allowed business to save over 300 hours of work versus the manual alternative, with a tight SAP migration deadline incoming
+									<br>Future-proofed every future part database entry at a 95% accuracy, which is comparable to human error
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<span class="image fit"><img src="images/textclassifier01.png" alt="" /></span>
+					<!-- 
+					<footer>
+						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+					</footer>
+				</div>
+			</article>
+
+		
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
